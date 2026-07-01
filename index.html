@@ -1,0 +1,1112 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="strict-origin-when-cross-origin" name="referrer" />
+    <title>DESI PUFFS - High-End Snacks</title>
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Bebas+Neue&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-highest": "#353535",
+              surface: "#131313",
+              "on-primary-fixed-variant": "#3b4d00",
+              "on-tertiary-container": "#536774",
+              "tertiary-fixed-dim": "#b5c9d9",
+              "on-primary-fixed": "#161f00",
+              "on-secondary-fixed": "#1a1c1c",
+              "on-secondary-container": "#b4b5b5",
+              "surface-tint": "#a8d700",
+              "surface-container": "#1f2020",
+              "on-tertiary": "#1f333f",
+              "on-secondary-fixed-variant": "#454747",
+              "surface-container-high": "#2a2a2a",
+              secondary: "#c6c6c7",
+              "inverse-on-surface": "#303030",
+              "on-primary-container": "#546d00",
+              "on-surface-variant": "#c4caac",
+              "surface-variant": "#353535",
+              "on-error-container": "#ffdad6",
+              "tertiary-container": "#d0e5f5",
+              background: "#131313",
+              "outline-variant": "#434933",
+              "secondary-container": "#454747",
+              primary: "#ffffff",
+              "surface-container-low": "#1b1c1c",
+              "inverse-surface": "#e4e2e1",
+              "surface-bright": "#393939",
+              "on-error": "#690005",
+              "on-background": "#e4e2e1",
+              "on-primary": "#273500",
+              error: "#ffb4ab",
+              "secondary-fixed-dim": "#c6c6c7",
+              "on-tertiary-fixed-variant": "#364956",
+              "surface-container-lowest": "#0e0e0e",
+              "surface-dim": "#131313",
+              "tertiary-fixed": "#d0e5f5",
+              "on-surface": "#e4e2e1",
+              tertiary: "#ffffff",
+              "error-container": "#93000a",
+              "inverse-primary": "#4f6600",
+              "secondary-fixed": "#e2e2e2",
+              outline: "#8e9479",
+              "primary-fixed-dim": "#a8d700",
+              "on-secondary": "#2f3131",
+              "primary-container": "#c0f500",
+              "on-tertiary-fixed": "#081e29",
+              "primary-fixed": "#c0f500",
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            spacing: {
+              "margin-desktop": "64px",
+              "section-gap": "160px",
+              gutter: "24px",
+              "margin-mobile": "20px",
+              "container-max": "1440px",
+              base: "8px",
+            },
+            fontFamily: {
+              "headline-xl-mobile": ["Anton"],
+              "headline-xl": ["Anton"],
+              "display-lg": ["Anton"],
+              "body-sm": ["Space Grotesk"],
+              "label-lg": ["Bebas Neue"],
+              "body-lg": ["Space Grotesk"],
+              "display-2xl": ["Anton"],
+              "body-md": ["Space Grotesk"],
+            },
+            fontSize: {
+              "headline-xl-mobile": [
+                "36px",
+                { lineHeight: "36px", fontWeight: "400" },
+              ],
+              "headline-xl": [
+                "48px",
+                { lineHeight: "48px", fontWeight: "400" },
+              ],
+              "display-lg": [
+                "72px",
+                { lineHeight: "72px", letterSpacing: "0em", fontWeight: "400" },
+              ],
+              "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+              "label-lg": [
+                "20px",
+                {
+                  lineHeight: "24px",
+                  letterSpacing: "0.1em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "display-2xl": [
+                "120px",
+                {
+                  lineHeight: "110px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "400",
+                },
+              ],
+              "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #131313;
+        color: #ffffff;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+      }
+
+      .brutalist-glass {
+        background: rgba(31, 32, 32, 0.4);
+        backdrop-filter: blur(40px);
+        -webkit-backdrop-filter: blur(40px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .neon-glow {
+        box-shadow: 0 0 20px rgba(192, 245, 0, 0.15);
+      }
+
+      .neon-hover:hover {
+        background-color: #c0f500;
+        color: #161f00;
+        box-shadow: 0 0 30px rgba(192, 245, 0, 0.3);
+        border-color: #c0f500;
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .parallax-layer {
+        transition: transform 0.1s ease-out;
+      }
+
+      .floating-anim {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(2deg);
+        }
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+      }
+
+      .shadow-anim {
+        animation: shadowScale 6s ease-in-out infinite;
+      }
+
+      @keyframes shadowScale {
+        0% {
+          transform: scale(1);
+          opacity: 0.5;
+        }
+        50% {
+          transform: scale(0.8);
+          opacity: 0.2;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0.5;
+        }
+      }
+
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .floating-anim,
+        .shadow-anim {
+          animation: none;
+        }
+        .reveal {
+          transition-duration: 0.001ms;
+        }
+        body {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="antialiased selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-surface/80 backdrop-blur-xl border-b border-white/10 flat no shadows"
+    >
+      <div
+        class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary tracking-tighter"
+      >
+        DESI PUFFS
+      </div>
+      <div class="hidden md:flex gap-8 items-center">
+        <a
+          class="font-label-lg text-label-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors hover:bg-primary/10 hover:text-primary-fixed px-4 py-2 rounded-DEFAULT active:scale-95 transition-transform duration-200"
+          href="#story"
+          >STORY</a
+        >
+        <a
+          class="font-label-lg text-label-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors hover:bg-primary/10 hover:text-primary-fixed px-4 py-2 rounded-DEFAULT active:scale-95 transition-transform duration-200"
+          href="#features"
+          >FEATURES</a
+        >
+        <a
+          class="font-label-lg text-label-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors hover:bg-primary/10 hover:text-primary-fixed px-4 py-2 rounded-DEFAULT active:scale-95 transition-transform duration-200"
+          href="#reviews"
+          >REVIEWS</a
+        >
+        <a
+          class="font-label-lg text-label-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors hover:bg-primary/10 hover:text-primary-fixed px-4 py-2 rounded-DEFAULT active:scale-95 transition-transform duration-200"
+          href="#partners"
+          >PARTNERS</a
+        >
+        <a
+          class="font-label-lg text-label-lg uppercase tracking-widest text-secondary hover:text-primary transition-colors hover:bg-primary/10 hover:text-primary-fixed px-4 py-2 rounded-DEFAULT active:scale-95 transition-transform duration-200"
+          href="#distribution"
+          >DISTRIBUTION</a
+        >
+      </div>
+      <button
+        class="font-label-lg text-label-lg uppercase tracking-widest border border-white/20 px-6 py-2 rounded rounded-DEFAULT hover:bg-primary-container hover:text-on-primary-container hover:border-primary-container transition-all duration-300 neon-hover"
+      >
+        ORDER NOW
+      </button>
+    </nav>
+    <!-- Global Background Shader -->
+    <div
+      class="fixed inset-0 z-[-1] pointer-events-none opacity-40 mix-blend-screen"
+    >
+      <!-- STITCH_SHADER_START:ANIMATION_3 class="absolute inset-0 w-full h-full" -->
+      <div class="absolute inset-0 w-full h-full" style="display: block">
+        <canvas
+          id="shader-canvas-ANIMATION_3"
+          style="display: block; width: 100%; height: 100%"
+        ></canvas>
+        <script>
+          (function () {
+            const canvas = document.getElementById("shader-canvas-ANIMATION_3");
+
+            // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+            // This fires on initial layout and whenever the element is resized.
+            function syncSize() {
+              const w = canvas.clientWidth || 1280;
+              const h = canvas.clientHeight || 720;
+              if (canvas.width !== w || canvas.height !== h) {
+                canvas.width = w;
+                canvas.height = h;
+              }
+            }
+            if (typeof ResizeObserver !== "undefined") {
+              new ResizeObserver(syncSize).observe(canvas);
+            }
+            syncSize();
+
+            const gl =
+              canvas.getContext("webgl") ||
+              canvas.getContext("experimental-webgl");
+            if (!gl) return;
+            const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+            const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+ 
+void main() {
+    vec2 uv = v_texCoord;
+    vec2 mouse = u_mouse / u_resolution;
+    
+    // Very subtle noise/grain effect for a matte black feel
+    float grain = fract(sin(dot(uv, vec2(12.9898, 78.233) + u_time * 0.01)) * 43758.5453);
+    
+    // Deep vignette
+    float vignette = 1.0 - length(uv - 0.5) * 0.8;
+    
+    // Base matte black color
+    vec3 color = vec3(0.043, 0.043, 0.043); // #0B0B0B approximate
+    
+    // Add a very faint, slow-moving lime-ish glow near the mouse or center
+    float dist = distance(uv, vec2(0.5) + (mouse - 0.5) * 0.1);
+    float glow = smoothstep(0.6, 0.0, dist) * 0.02;
+    vec3 accentColor = vec3(0.784, 1.0, 0.0); // #C8FF00
+    
+    color += accentColor * glow;
+    color *= vignette;
+    color += (grain - 0.5) * 0.015; // subtle grain
+    
+    gl_FragColor = vec4(color, 1.0);
+}`;
+            function cs(type, src) {
+              const s = gl.createShader(type);
+              gl.shaderSource(s, src);
+              gl.compileShader(s);
+              return s;
+            }
+            const prog = gl.createProgram();
+            gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+            gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+            gl.linkProgram(prog);
+            gl.useProgram(prog);
+            const buf = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+            gl.bufferData(
+              gl.ARRAY_BUFFER,
+              new Float32Array([-1, -1, 1, -1, -1, 1, 1, 1]),
+              gl.STATIC_DRAW,
+            );
+            const pos = gl.getAttribLocation(prog, "a_position");
+            gl.enableVertexAttribArray(pos);
+            gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+            const uTime = gl.getUniformLocation(prog, "u_time");
+            const uRes = gl.getUniformLocation(prog, "u_resolution");
+            const uMouse = gl.getUniformLocation(prog, "u_mouse");
+
+            // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+            // Shaders that need normalized coords should use: u_mouse / u_resolution.
+            let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+            window.addEventListener("mousemove", (event) => {
+              const rect = canvas.getBoundingClientRect();
+              if (rect.width && rect.height) {
+                const nx = (event.clientX - rect.left) / rect.width;
+                const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+                mouse.x = nx * canvas.width;
+                mouse.y = ny * canvas.height;
+              }
+            });
+
+            function render(t) {
+              if (typeof ResizeObserver === "undefined") syncSize();
+              gl.viewport(0, 0, canvas.width, canvas.height);
+              if (uTime) gl.uniform1f(uTime, t * 0.001);
+              if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+              if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+              gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+              requestAnimationFrame(render);
+            }
+            render(0);
+          })();
+        </script>
+      </div>
+      <!-- STITCH_SHADER_END:ANIMATION_3 -->
+    </div>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+      id="hero"
+    >
+      <div class="absolute inset-0 z-0 opacity-20 pointer-events-none">
+        <div
+          class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary-container rounded-full blur-[120px] mix-blend-overlay"
+        ></div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-primary rounded-full blur-[100px] mix-blend-overlay"
+        ></div>
+      </div>
+      <div
+        class="max-w-[1440px] w-full px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10"
+      >
+        <div
+          class="md:col-span-7 flex flex-col justify-center parallax-layer"
+          data-speed="0.05"
+        >
+          <div
+            class="border border-white/20 rounded-full px-4 py-1 inline-flex items-center gap-2 w-max mb-8 brutalist-glass"
+          >
+            <span
+              class="w-2 h-2 rounded-full bg-primary-container animate-pulse"
+            ></span>
+            <span class="font-label-lg text-label-lg text-primary-container"
+              >NEW MASALA DROP</span
+            >
+          </div>
+          <h1
+            class="font-display-2xl text-headline-xl-mobile md:text-display-2xl text-primary uppercase tracking-tighter leading-none mb-6"
+          >
+            DESI.<br />
+            <span
+              class="text-transparent"
+              style="-webkit-text-stroke: 2px #ffffff"
+              >NOT BORING.</span
+            >
+          </h1>
+          <p class="font-body-lg text-body-lg text-secondary max-w-md mb-10">
+            The raw energy of high-street brutalism meets the bold flavors of
+            authentic street food. Roasted, plant-based, and unapologetic.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <button
+              class="bg-primary text-on-primary font-label-lg text-label-lg px-8 py-4 rounded rounded-DEFAULT hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 neon-hover flex items-center gap-2"
+            >
+              SHOP NOW
+              <span
+                class="material-symbols-outlined"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >arrow_forward</span
+              >
+            </button>
+            <button
+              class="brutalist-glass text-primary border border-white/20 font-label-lg text-label-lg px-8 py-4 rounded rounded-DEFAULT hover:bg-white/10 transition-all duration-300"
+            >
+              EXPLORE FLAVORS
+            </button>
+          </div>
+        </div>
+        <div
+          class="md:col-span-5 relative mt-16 md:mt-0 parallax-layer flex justify-center items-center"
+          data-speed="-0.03"
+        >
+          <div class="relative w-full max-w-md aspect-[3/4] floating-anim">
+            <!-- High-End 3D Pouch Silhouette SVG Placeholder -->
+            <svg
+              class="w-full h-full drop-shadow-2xl"
+              fill="none"
+              viewbox="0 0 400 600"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <lineargradient
+                  id="pouchGrad"
+                  x1="0%"
+                  x2="100%"
+                  y1="0%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stop-color="#2a2a2a"></stop>
+                  <stop offset="50%" stop-color="#131313"></stop>
+                  <stop offset="100%" stop-color="#0e0e0e"></stop>
+                </lineargradient>
+                <lineargradient
+                  id="accentGrad"
+                  x1="0%"
+                  x2="100%"
+                  y1="0%"
+                  y2="0%"
+                >
+                  <stop
+                    offset="0%"
+                    stop-color="#c0f500"
+                    stop-opacity="0.8"
+                  ></stop>
+                  <stop
+                    offset="100%"
+                    stop-color="#a8d700"
+                    stop-opacity="0.2"
+                  ></stop>
+                </lineargradient>
+              </defs>
+              <!-- Pouch Body -->
+              <path
+                d="M50 80 Q 200 60 350 80 L 380 520 Q 200 550 20 520 Z"
+                fill="url(#pouchGrad)"
+                stroke="rgba(255,255,255,0.1)"
+                stroke-width="2"
+              ></path>
+              <!-- Top Seal -->
+              <rect
+                fill="#1f2020"
+                height="30"
+                rx="4"
+                stroke="rgba(255,255,255,0.05)"
+                width="300"
+                x="50"
+                y="40"
+              ></rect>
+              <!-- Bottom Seal -->
+              <path
+                d="M20 520 Q 200 550 380 520 L 370 560 Q 200 580 30 560 Z"
+                fill="#1f2020"
+                stroke="rgba(255,255,255,0.05)"
+              ></path>
+              <!-- Branding Mock -->
+              <text
+                fill="#ffffff"
+                font-family="Anton"
+                font-size="48"
+                letter-spacing="4"
+                text-anchor="middle"
+                x="200"
+                y="250"
+              >
+                DESI
+              </text>
+              <text
+                fill="#c0f500"
+                font-family="Anton"
+                font-size="64"
+                letter-spacing="2"
+                text-anchor="middle"
+                x="200"
+                y="320"
+              >
+                PUFFS
+              </text>
+              <text
+                fill="#a8d700"
+                font-family="Space Grotesk"
+                font-size="16"
+                letter-spacing="4"
+                text-anchor="middle"
+                x="200"
+                y="400"
+              >
+                MASALA
+              </text>
+              <!-- Highlights -->
+              <path
+                d="M60 100 Q 150 90 150 400"
+                fill="none"
+                filter="blur(4px)"
+                stroke="rgba(255,255,255,0.1)"
+                stroke-width="4"
+              ></path>
+            </svg>
+            <!-- Ground Shadow -->
+            <div
+              class="absolute -bottom-12 left-1/2 -translate-x-1/2 w-64 h-8 bg-black/80 blur-xl rounded-[100%] shadow-anim"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section
+      class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest relative z-10"
+      id="features"
+    >
+      <div class="max-w-[1440px] mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end mb-20 reveal"
+        >
+          <h2
+            class="font-display-lg text-headline-xl-mobile md:text-display-lg text-primary uppercase tracking-tighter"
+          >
+            THE SPECS
+          </h2>
+          <p
+            class="font-body-md text-body-md text-secondary max-w-sm mt-4 md:mt-0 text-right"
+          >
+            Engineered for maximum flavor without the compromise. High-tech
+            snacking.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <!-- Feature 1 -->
+          <div
+            class="brutalist-glass p-8 rounded rounded-lg border border-white/10 hover:-translate-y-2 transition-all duration-300 group reveal"
+          >
+            <div
+              class="font-label-lg text-label-lg text-primary-container mb-6 flex justify-between items-center"
+            >
+              <span>01.</span>
+              <span
+                class="material-symbols-outlined text-4xl opacity-50 group-hover:opacity-100 transition-opacity"
+                >local_fire_department</span
+              >
+            </div>
+            <h3
+              class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4 uppercase"
+            >
+              Roasted<br />Not Fried
+            </h3>
+            <p class="font-body-sm text-body-sm text-secondary">
+              Precision air-roasted to deliver a devastating crunch without the
+              heavy oil residue. Clean fuel.
+            </p>
+            <div
+              class="mt-8 h-1 w-0 bg-primary-container group-hover:w-full transition-all duration-500"
+            ></div>
+          </div>
+          <!-- Feature 2 -->
+          <div
+            class="brutalist-glass p-8 rounded rounded-lg border border-white/10 hover:-translate-y-2 transition-all duration-300 group reveal"
+            style="transition-delay: 100ms"
+          >
+            <div
+              class="font-label-lg text-label-lg text-primary-container mb-6 flex justify-between items-center"
+            >
+              <span>02.</span>
+              <span
+                class="material-symbols-outlined text-4xl opacity-50 group-hover:opacity-100 transition-opacity"
+                >eco</span
+              >
+            </div>
+            <h3
+              class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4 uppercase"
+            >
+              Plant<br />Based
+            </h3>
+            <p class="font-body-sm text-body-sm text-secondary">
+              100% vegan formulation. Harnessing the raw power of ancient grains
+              and potent spices.
+            </p>
+            <div
+              class="mt-8 h-1 w-0 bg-primary-container group-hover:w-full transition-all duration-500"
+            ></div>
+          </div>
+          <!-- Feature 3 -->
+          <div
+            class="brutalist-glass p-8 rounded rounded-lg border border-white/10 hover:-translate-y-2 transition-all duration-300 group reveal"
+            style="transition-delay: 200ms"
+          >
+            <div
+              class="font-label-lg text-label-lg text-primary-container mb-6 flex justify-between items-center"
+            >
+              <span>03.</span>
+              <span
+                class="material-symbols-outlined text-4xl opacity-50 group-hover:opacity-100 transition-opacity"
+                >bolt</span
+              >
+            </div>
+            <h3
+              class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary mb-4 uppercase"
+            >
+              Hyper<br />Flavor
+            </h3>
+            <p class="font-body-sm text-body-sm text-secondary">
+              Unapologetically intense seasoning profiles designed to vibrate on
+              the palate.
+            </p>
+            <div
+              class="mt-8 h-1 w-0 bg-primary-container group-hover:w-full transition-all duration-500"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================= -->
+    <!-- Testimonials / Reels Video Section  ("WHAT OUR PEOPLE SAY")   -->
+    <!-- ============================================================= -->
+    <!--
+    HOW TO ADD MORE VIDEOS:
+    Scroll down to the <script id="reels-data"> block near the bottom.
+    Just add another line to the `reels` array, e.g.:
+        { id: "YOUR_YOUTUBE_ID", handle: "@their.handle", caption: "Their reaction here" },
+    The id is the part after "watch?v=" or after "youtu.be/" or after "shorts/".
+    Frames are auto-generated. Videos only load when tapped (keeps the page fast).
+-->
+    <section
+      class="py-section-gap px-margin-mobile md:px-margin-desktop relative z-10 overflow-hidden"
+      id="reviews"
+    >
+      <div class="max-w-[1440px] mx-auto">
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-end mb-14 reveal"
+        >
+          <div>
+            <div
+              class="border border-white/20 rounded-full px-4 py-1 inline-flex items-center gap-2 w-max mb-6 brutalist-glass"
+            >
+              <span
+                class="w-2 h-2 rounded-full bg-primary-container animate-pulse"
+              ></span>
+              <span class="font-label-lg text-label-lg text-primary-container"
+                >STRAIGHT FROM THE STREETS</span
+              >
+            </div>
+            <h2
+              class="font-display-lg text-headline-xl-mobile md:text-display-lg text-primary uppercase tracking-tighter leading-none"
+            >
+              WHAT OUR<br />PEOPLE SAY
+            </h2>
+          </div>
+          <div class="flex items-end gap-6 mt-8 md:mt-0">
+            <p
+              class="font-body-md text-body-md text-secondary max-w-xs md:text-right"
+            >
+              Real reactions. Real deals. Swipe the feed and see why the culture
+              won't shut up about us.
+            </p>
+            <!-- Desktop scroll controls -->
+            <div class="hidden md:flex gap-3">
+              <button
+                aria-label="Scroll left"
+                class="reels-nav brutalist-glass w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 active:scale-90"
+                data-dir="-1"
+              >
+                <span class="material-symbols-outlined">arrow_back</span>
+              </button>
+              <button
+                aria-label="Scroll right"
+                class="reels-nav brutalist-glass w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-primary hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 active:scale-90"
+                data-dir="1"
+              >
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Horizontal scroll track (phone frames injected here) -->
+        <div class="reveal">
+          <div
+            class="reels-track flex gap-6 overflow-x-auto hide-scrollbar snap-x snap-mandatory pb-6 -mx-margin-mobile px-margin-mobile md:-mx-2 md:px-2"
+            id="reels-track"
+          >
+            <!-- JS-generated phone frames -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================================================= -->
+    <!-- Gen Z / World-Class Section  ("WHY WE'RE THE BEST")          -->
+    <!-- ============================================================= -->
+    <section
+      class="pb-section-gap px-margin-mobile md:px-margin-desktop relative z-10 overflow-hidden"
+      id="genz"
+    >
+      <div class="max-w-[1440px] mx-auto">
+        <div
+          class="brutalist-glass rounded rounded-lg border border-white/10 p-8 md:p-16 lg:p-20 relative overflow-hidden reveal"
+        >
+          <!-- ambient glow -->
+          <div
+            class="absolute -top-24 -right-24 w-[420px] h-[420px] bg-primary-container rounded-full blur-[150px] opacity-20 pointer-events-none"
+          ></div>
+          <div
+            class="absolute -bottom-32 -left-24 w-[360px] h-[360px] bg-primary rounded-full blur-[140px] opacity-10 pointer-events-none mix-blend-overlay"
+          ></div>
+          <div
+            class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center"
+          >
+            <!-- Left: thesis -->
+            <div>
+              <div
+                class="border border-white/20 rounded-full px-4 py-1 inline-flex items-center gap-2 w-max mb-8 brutalist-glass"
+              >
+                <span
+                  class="w-2 h-2 rounded-full bg-primary-container animate-pulse"
+                ></span>
+                <span class="font-label-lg text-label-lg text-primary-container"
+                  >CULT STATUS</span
+                >
+              </div>
+              <h2
+                class="font-display-lg text-headline-xl-mobile md:text-display-lg text-primary uppercase tracking-tighter leading-none mb-8"
+              >
+                GEN Z IS<br />
+                <span
+                  class="text-transparent"
+                  style="-webkit-text-stroke: 2px #c0f500"
+                  >CRAZY</span
+                >
+                FOR US.
+              </h2>
+              <p class="font-body-lg text-body-lg text-secondary max-w-md mb-6">
+                We didn't chase the trend — we became it. A new generation grew
+                up on this crunch, turned it into content, and made a humble
+                snack impossible to ignore.
+              </p>
+              <p
+                class="font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary uppercase tracking-tight mb-10"
+              >
+                Let's make puffed rice
+                <span class="text-primary-container">world class.</span>
+              </p>
+              <button
+                class="bg-primary text-on-primary font-label-lg text-label-lg px-8 py-4 rounded rounded-DEFAULT hover:bg-primary-container hover:text-on-primary-container transition-all duration-300 neon-hover flex items-center gap-2 w-max"
+              >
+                JOIN THE MOVEMENT
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+            <!-- Right: stat flex -->
+            <div class="grid grid-cols-2 gap-gutter">
+              <div
+                class="border border-white/10 rounded rounded-lg p-6 bg-surface/40 hover:-translate-y-1 hover:border-primary-container/40 transition-all duration-300 group"
+              >
+                <div
+                  class="font-display-lg text-headline-xl-mobile md:text-headline-xl text-primary-container leading-none mb-3 group-hover:scale-105 origin-left transition-transform"
+                >
+                  92%
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-secondary uppercase tracking-widest"
+                >
+                  Gen Z would buy again
+                </p>
+              </div>
+              <div
+                class="border border-white/10 rounded rounded-lg p-6 bg-surface/40 hover:-translate-y-1 hover:border-primary-container/40 transition-all duration-300 group"
+              >
+                <div
+                  class="font-display-lg text-headline-xl-mobile md:text-headline-xl text-primary-container leading-none mb-3 group-hover:scale-105 origin-left transition-transform"
+                >
+                  2.4M
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-secondary uppercase tracking-widest"
+                >
+                  Reel views &amp; counting
+                </p>
+              </div>
+              <div
+                class="border border-white/10 rounded rounded-lg p-6 bg-surface/40 hover:-translate-y-1 hover:border-primary-container/40 transition-all duration-300 group"
+              >
+                <div
+                  class="font-display-lg text-headline-xl-mobile md:text-headline-xl text-primary-container leading-none mb-3 group-hover:scale-105 origin-left transition-transform"
+                >
+                  4.9<span class="text-3xl align-top">★</span>
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-secondary uppercase tracking-widest"
+                >
+                  Average taste rating
+                </p>
+              </div>
+              <div
+                class="border border-white/10 rounded rounded-lg p-6 bg-surface/40 hover:-translate-y-1 hover:border-primary-container/40 transition-all duration-300 group"
+              >
+                <div
+                  class="font-display-lg text-headline-xl-mobile md:text-headline-xl text-primary-container leading-none mb-3 group-hover:scale-105 origin-left transition-transform"
+                >
+                  #1
+                </div>
+                <p
+                  class="font-body-sm text-body-sm text-secondary uppercase tracking-widest"
+                >
+                  Trending desi snack
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="w-full py-section-gap px-margin-mobile md:px-margin-desktop flex flex-col items-center gap-base bg-surface border-t border-white/5 flat no shadows relative z-10"
+    >
+      <div
+        class="font-display-2xl text-display-2xl text-surface-container-highest opacity-20 tracking-tighter w-full text-center overflow-hidden whitespace-nowrap select-none pointer-events-none"
+      >
+        DESI PUFFS
+      </div>
+      <div class="flex gap-8 mt-12 mb-8 z-10">
+        <a
+          class="font-body-sm text-body-sm uppercase tracking-widest text-secondary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100"
+          href="#"
+          >PRIVACY</a
+        >
+        <a
+          class="font-body-sm text-body-sm uppercase tracking-widest text-secondary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100"
+          href="#"
+          >TERMS</a
+        >
+        <a
+          class="font-body-sm text-body-sm uppercase tracking-widest text-secondary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100"
+          href="#"
+          >INSTAGRAM</a
+        >
+        <a
+          class="font-body-sm text-body-sm uppercase tracking-widest text-secondary-fixed-dim hover:text-primary-fixed transition-colors opacity-80 hover:opacity-100"
+          href="#"
+          >LINKEDIN</a
+        >
+      </div>
+      <div
+        class="font-body-sm text-body-sm uppercase tracking-widest text-secondary z-10"
+      >
+        ©2024 DESI PUFFS GLOBAL. ALL RIGHTS RESERVED.
+      </div>
+    </footer>
+    <!-- ============================================================= -->
+    <!-- REELS DATA — add / remove / reorder your YouTube videos here  -->
+    <!-- ============================================================= -->
+    <script id="reels-data">
+      // Each entry becomes one phone frame, left-to-right.
+      // id      = the YouTube video ID (works for normal videos AND Shorts)
+      // handle  = the person / creator label shown at the bottom
+      // caption = the one-line reaction / deal text
+      // NOTE: These placeholders are Creative Commons open films (made to be
+      // embedded) — safer bets than label/music videos, which often have
+      // embedding disabled. They stand in until you paste your own uploads.
+      // I could NOT render them live from my side, so treat them as demo only:
+      // the real proof is opening this page on a normal https:// site with YOUR
+      // embeddable video. If one demo ever errors, it's that video, not the code.
+      const reels = [
+        {
+          id: "aqz-KE-bpKQ",
+          handle: "@street.eats.raj",
+          caption: "Bro this masala hits DIFFERENT 🔥",
+        },
+        {
+          id: "eRsGyueVLvQ",
+          handle: "@snackqueen",
+          caption: "50% off deal? Whole hostel is stocked up.",
+        },
+        {
+          id: "R6MlUcmOul8",
+          handle: "@fitfoodie.anu",
+          caption: "Roasted not fried = my new gym snack.",
+        },
+        {
+          id: "SkVqJ1SGeL0",
+          handle: "@thecollegeguy",
+          caption: "Ordered once. Now it's a subscription.",
+        },
+        {
+          id: "TLkA0RELQ1g",
+          handle: "@masala.mania",
+          caption: "Loudest crunch I've ever heard, no cap.",
+        },
+        {
+          id: "Y-rmzh0PI3c",
+          handle: "@desi.vibes",
+          caption: "Can't stop. Won't stop. Send help. 😭",
+        },
+        // 👇 Just paste your new uploads below this line
+        // { id: "PASTE_ID_HERE", handle: "@name", caption: "Their words" },
+      ];
+    </script>
+    <!-- Scripts -->
+    <script>
+      // ---------- Build the phone-frame reels ----------
+      (function () {
+        const track = document.getElementById("reels-track");
+        if (!track || typeof reels === "undefined") return;
+
+        function frame(v, i) {
+          const num = String(i + 1).padStart(2, "0");
+          const thumb = "https://img.youtube.com/vi/" + v.id + "/hqdefault.jpg";
+          const wrap = document.createElement("article");
+          wrap.className =
+            "reel-card group relative flex-shrink-0 w-[250px] md:w-[290px] snap-center";
+          wrap.innerHTML = `
+                    <div class="relative rounded-[2.5rem] border-[8px] border-surface-container-high bg-black shadow-2xl transition-all duration-500 group-hover:-translate-y-2 group-hover:neon-glow">
+                        <!-- phone notch -->
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-24 h-6 bg-surface-container-high rounded-b-2xl z-30"></div>
+                        <div class="relative aspect-[9/16] rounded-[1.75rem] overflow-hidden bg-surface-container">
+                            <div class="reel-inner absolute inset-0" data-video-id="${v.id}">
+                                <div class="absolute inset-0 bg-gradient-to-br from-surface-container-high via-surface to-black"></div>
+                                <img src="${thumb}" alt="" loading="lazy"
+                                     class="reel-thumb relative w-full h-full object-cover"
+                                     onerror="this.style.display='none'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-black/30"></div>
+                                <div class="absolute top-4 left-4 font-label-lg text-label-lg text-primary-container">REEL ${num}</div>
+                                <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank" rel="noopener"
+                                   class="reel-yt absolute top-3 right-3 z-40 flex items-center gap-1 px-2 py-1 rounded-full bg-black/60 border border-white/15 text-secondary hover:text-primary hover:border-primary-container transition-colors"
+                                   title="Watch on YouTube">
+                                    <span class="material-symbols-outlined text-base">open_in_new</span>
+                                </a>
+                                <button class="reel-play absolute inset-0 flex items-center justify-center" aria-label="Play video from ${v.handle}">
+                                    <span class="flex items-center justify-center w-16 h-16 rounded-full bg-primary-container text-on-primary-container shadow-lg transition-transform duration-300 hover:scale-110 neon-glow">
+                                        <span class="material-symbols-outlined text-4xl" style="font-variation-settings:'FILL' 1;">play_arrow</span>
+                                    </span>
+                                </button>
+                                <div class="absolute bottom-0 left-0 right-0 p-5 pointer-events-none">
+                                    <p class="font-body-md text-body-md text-primary leading-snug mb-1">${v.caption}</p>
+                                    <p class="font-body-sm text-body-sm text-primary-container">${v.handle}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+          return wrap;
+        }
+
+        reels.forEach((v, i) => track.appendChild(frame(v, i)));
+
+        // Click to load + play the actual YouTube video (lazy)
+        track.addEventListener("click", function (e) {
+          const btn = e.target.closest(".reel-play");
+          if (!btn) return;
+          const inner = btn.closest(".reel-inner");
+          const id = inner.getAttribute("data-video-id");
+          inner.innerHTML =
+            '<iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/' +
+            id +
+            '?autoplay=1&playsinline=1&rel=0" title="DESI PUFFS reel" frameborder="0" ' +
+            'referrerpolicy="strict-origin-when-cross-origin" ' +
+            'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ' +
+            "allowfullscreen></iframe>";
+        });
+
+        // Desktop arrow controls
+        document.querySelectorAll(".reels-nav").forEach(function (b) {
+          b.addEventListener("click", function () {
+            const dir = parseInt(b.getAttribute("data-dir"), 10);
+            track.scrollBy({
+              left: dir * (track.clientWidth * 0.8),
+              behavior: "smooth",
+            });
+          });
+        });
+      })();
+
+      // ---------- Intersection Observer for Reveal Animations ----------
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".reveal").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // ---------- Mouse Parallax Effect ----------
+      document.addEventListener("mousemove", (e) => {
+        const layers = document.querySelectorAll(".parallax-layer");
+        const x = e.clientX - window.innerWidth / 2;
+        const y = e.clientY - window.innerHeight / 2;
+
+        layers.forEach((layer) => {
+          const speed = layer.getAttribute("data-speed");
+          const xPos = x * speed;
+          const yPos = y * speed;
+          layer.style.transform = `translate(${xPos}px, ${yPos}px)`;
+        });
+      });
+
+      // ---------- Form Validation UI (Simple) ----------
+      const distributorForm = document.getElementById("distributor-form");
+      if (distributorForm) {
+        distributorForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const btn = distributorForm.querySelector('button[type="submit"]');
+          const originalText = btn.innerText;
+          btn.innerText = "REQUEST SENT";
+          btn.classList.add(
+            "bg-primary-container",
+            "text-on-primary-container",
+          );
+          setTimeout(() => {
+            btn.innerText = originalText;
+            btn.classList.remove(
+              "bg-primary-container",
+              "text-on-primary-container",
+            );
+            distributorForm.reset();
+          }, 3000);
+        });
+      }
+    </script>
+  </body>
+</html>
